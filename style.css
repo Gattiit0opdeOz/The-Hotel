@@ -55,10 +55,14 @@
 	display: inline-block;
 }
 
+.navegacion ul li:hover a, .logo:hover{
+	transition: color 0.2s linear;
+	color: var(--color-dorado);
+}
+
 .navegacion ul li a{
 	left: 0;
 	display: block;
 	padding: 10px;
-	transition: all 0.2s linear;
 	border-radius: 5px;
 }
