@@ -2,3 +2,51 @@
 	padding: 0px;
 	margin: 0px;
 }
+
+.header{
+	left: 0;
+	right: 0;
+	background:  #5C4062;
+	color: #fff;
+	padding: 15px 0;
+	position: fixed;
+	z-index: 1;
+}
+
+.header a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo{
+	margin-left: 20px;
+	display: block;
+	letter-spacing: 5px;
+	font-size: 1.3em;
+}
+
+.navegacion ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navegacion ul li{
+	display: inline-block;
+}
+
+.navegacion ul li a{
+	left: 0;
+	display: block;
+	padding: 10px;
+	transition: all 0.2s linear;
+	border-radius: 5px;
+}
+
