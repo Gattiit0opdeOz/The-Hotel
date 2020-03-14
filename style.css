@@ -1,3 +1,16 @@
+/*
+	Defino las variables aqui para que puedan ser usadas por todos los selectores
+	para usarlas, en el momento de necesitar poner colores: var(--nombre,por si no se encuentra aqui poner el color normal)
+	así para modificar algun color,solo lo hariamos desde aquí
+*/
+:root{
+	--color-blanco: #efedeb;
+	--color-gris: #949495;
+	--color-dorado: #e39e24;
+	--color-dorado-oscuro: #926226;
+	--color-negro: #212020;
+}
+
 *{
 	padding: 0px;
 	margin: 0px;
@@ -6,15 +19,15 @@
 .header{
 	left: 0;
 	right: 0;
-	background:  #5C4062;
-	color: #fff;
+	background:  var(--color-negro);
+	color: var(--color-blanco);
 	padding: 15px 0;
 	position: fixed;
 	z-index: 1;
 }
 
 .header a{
-	color: #fff;
+	color: var(--color-blanco);
 	text-decoration: none;
 }
 
@@ -49,4 +62,3 @@
 	transition: all 0.2s linear;
 	border-radius: 5px;
 }
-
