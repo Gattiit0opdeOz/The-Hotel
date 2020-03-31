@@ -19,5 +19,19 @@
 main{
     position: relative;
     top: 66px;
+}
+
+#presentación{
     padding: 50px 0px 50px 50px;
+    background-image: url(../img/foto-hotel.jpg);
+    background-size: 100% auto;
+    background-position: 0 30%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    color: var(--color-blanco);
+}
+
+iframe{
+    width:560px; 
+    height:315px;
 }
