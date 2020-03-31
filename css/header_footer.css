@@ -14,6 +14,7 @@
 *{
 	padding: 0px;
 	margin: 0px;
+	overflow-x: hidden !important;
 }
 
 .header{
@@ -97,13 +98,13 @@ footer{
 
 #footer hr{
 	background-color: var(--color-blanco);
-	width: 80%;
+	width: 75%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
 
 .contenedor-derechos p{
-	width: 80%;
+	width: 75%;
 	margin-left: 10%;
 	margin-right: 10%;
 	padding: 20px;
