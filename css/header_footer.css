@@ -16,6 +16,10 @@
 	margin: 0px;
 }
 
+body{
+	overflow-x: hidden;
+}
+
 .header{
 	left: 0;
 	right: 0;
