@@ -26,9 +26,14 @@ main{
     background-image: url(../img/foto-hotel.jpg);
     background-size: 100% auto;
     background-position: 0 30%;
-    display: grid;
-    grid-template-columns: 60% 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     color: var(--color-blanco);
+}
+
+.nombre-lema{
+    margin: 0 50px;
 }
 
 iframe{
