@@ -36,6 +36,15 @@ main{
     margin: 0 50px;
 }
 
+.nombre-lema h1{
+    font-size: 5em;
+    letter-spacing: 8px;
+}
+
+.lema{
+    font-size: 2em;
+} 
+
 iframe{
     width:560px; 
     height:315px;

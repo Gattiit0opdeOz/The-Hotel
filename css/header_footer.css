@@ -84,6 +84,7 @@ footer{
 	display: inline-block;
 	list-style: none;
 	vertical-align: text-top;
+	margin-top: 30px;
 }
 
 .columna-footer:first-child{
