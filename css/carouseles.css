@@ -1,0 +1,124 @@
+/* Estilo para carruseles */
+.carousel-imagenes{
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+
+.imagenes{
+    transform-style: preserve-3d;
+    margin: 30vh auto;
+}
+
+.imagenes, .imagenes > div{
+    width: 300px;
+    height: 180px;
+}
+
+.foto{
+    position: absolute;
+    border: 5px black solid;
+}
+
+.foto > img{
+    width: 100%;
+    height: 100%;
+}
+
+.imagenes .foto:nth-child(1){
+    transform: translateZ(200px);
+    animation: motion1 10s infinite ease-in-out;
+}
+
+.imagenes .foto:nth-child(2){
+    transform: translateZ(-200px);
+    animation: motion2 10s infinite ease-in-out;
+    opacity: .6;
+}
+
+.imagenes .foto:nth-child(3){
+    transform: translateX(-70%);
+    animation: motion3 10s infinite ease-in-out;
+    opacity: .6;
+}
+
+.imagenes .foto:nth-child(4){
+    transform: translateX(70%);
+    animation: motion4 10s infinite ease-in-out;
+    opacity: .6;
+}
+
+/* Animaciones usadas */
+@keyframes motion1{
+    0%{
+        transform: translateZ(200px);
+    }
+    25%{
+        transform: translateX(70%);
+        opacity: .6;
+    }
+    50%{
+        transform: translateZ(-200px);
+        opacity: .6;
+    }
+    75%{
+        transform: translateX(-70%);
+        opacity: .6;
+    }
+}
+
+@keyframes motion2{
+    0%{
+        transform: translateZ(-200px);
+        opacity: .6;
+    }
+    25%{
+        transform: translateX(-70%);
+        opacity: .6;
+    }
+    50%{
+        transform: translateZ(200px);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(70%);
+        opacity: .6;
+    }
+}
+
+@keyframes motion3{
+    0%{
+        transform: translateX(-70%);
+        opacity: .6;
+    }
+    25%{
+        transform: translateZ(200px);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(70%);
+        opacity: .6;
+    }
+    75%{
+        transform: translateZ(-200px);
+        opacity: .6;
+    }
+}
+
+@keyframes motion4{
+    0%{
+        transform: translateX(70%);
+        opacity: .6;
+    }
+    25%{
+        transform: translateZ(-200px);
+        opacity: .6;
+    }
+    50%{
+        transform: translateX(-70%);
+        opacity: .6;
+    }
+    75%{
+        transform: translateZ(200px);
+        opacity: 1;
+    }
+}
