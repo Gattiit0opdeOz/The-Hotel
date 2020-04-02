@@ -57,3 +57,12 @@ iframe{
     padding: 30px;
     display: flex;
 }
+
+#habitaciones{
+    width: 100%;
+}
+
+.texto-desc{
+    display: inline-block;
+    width: 70%;
+}
