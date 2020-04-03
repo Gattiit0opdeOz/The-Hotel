@@ -66,3 +66,14 @@ iframe{
     display: inline-block;
     width: 70%;
 }
+
+.texto-desc > ul{
+    margin-left: 15%; 
+}
+
+.texto-desc a{
+    margin-left: 15%;
+    text-decoration: none;
+    background-color: var(--color-dorado);
+    color: var(--color-blanco);
+}
