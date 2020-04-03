@@ -67,15 +67,19 @@ iframe{
     width: 70%;
 }
 
-.texto-desc > ul{
-    margin-left: 15%; 
+.lista-desc{
+    margin-left: 15%;
+    margin-bottom: 20px;
 }
 
-.texto-desc a{
+.botonsito{
     margin-left: 15%;
+    margin-top: 15%;
     text-decoration: none;
     background-color: var(--color-dorado);
     color: var(--color-blanco);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .descripciones-index2{
@@ -84,11 +88,4 @@ iframe{
 
 .texto-desc2{
     float: right;
-}
-
-.texto-desc2 a{
-    margin-left: 15%;
-    text-decoration: none;
-    background-color: var(--color-dorado);
-    color: var(--color-blanco);
 }
