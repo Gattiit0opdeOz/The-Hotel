@@ -77,3 +77,18 @@ iframe{
     background-color: var(--color-dorado);
     color: var(--color-blanco);
 }
+
+.descripciones-index2{
+    float: right;
+}
+
+.texto-desc2{
+    float: right;
+}
+
+.texto-desc2 a{
+    margin-left: 15%;
+    text-decoration: none;
+    background-color: var(--color-dorado);
+    color: var(--color-blanco);
+}
