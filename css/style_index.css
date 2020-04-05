@@ -17,6 +17,8 @@
 }
 /* Ahora aqui que sea mejor los estilos para la principal */
 main{
+    width: 100vw;
+    height: fit-content;
     position: relative;
     top: 66px;
 }
