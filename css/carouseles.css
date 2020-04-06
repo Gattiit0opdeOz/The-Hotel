@@ -2,9 +2,7 @@
 .carousel-imagenes{
     width: 23%;
     height: fit-content;
-    display: inline-block;
     position: relative;
-    bottom: 100px;
     perspective: 1000px;
     perspective-origin: 50% 50%;
 }

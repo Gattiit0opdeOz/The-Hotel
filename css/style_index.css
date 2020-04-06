@@ -60,6 +60,9 @@ iframe{
 }
 
 .contenedor-carrusel{
+    display: flex;
+    align-items: center;
+    justify-items: center;
     font-size: larger;
     color: var(--color-blanco);
 }
@@ -67,6 +70,11 @@ iframe{
 .contenedor-carrusel:nth-child(2){
     position: relative;
     left: 10%;
+}
+
+.texto-desc:nth-child(2){
+    position: relative;
+    left: 30%;
 }
 
 .carousel-imagenes,.texto-desc{
