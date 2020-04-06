@@ -1,17 +1,16 @@
 /* Estilo para carruseles */
 .carousel-imagenes{
-    width: 25%;
+    width: 23%;
+    height: fit-content;
     display: inline-block;
-    position: absolute;
-    top: -20%;
-    right: 25%;
+    position: relative;
+    bottom: 100px;
     perspective: 1000px;
     perspective-origin: 50% 50%;
 }
 
 .imagenes{
     transform-style: preserve-3d;
-    margin: 30% 30%;
 }
 
 .imagenes, .imagenes > div{
