@@ -59,12 +59,12 @@ iframe{
     background-color: var(--color-negro);
 }
 
-#habitaciones{
+.contenedor-carrusel{
     position: relative;
     color: var(--color-blanco);
 }
 
-#habitaciones > *{
+.contenedor-carrusel > *{
     display: inline-block;
 }
 
