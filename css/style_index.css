@@ -100,3 +100,17 @@ iframe{
     border-radius: 5px;
     text-decoration: none;
 }
+section:nth-child(3){
+    padding-bottom: 40px;
+}
+
+#ubicacion{
+    background-color: var(--color-blanco);
+    padding: 50px;
+    text-align: center;
+}
+
+#ubicacion h2{
+    font-size: 2em;
+    
+}
