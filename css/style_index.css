@@ -112,5 +112,10 @@ section:nth-child(3){
 
 #ubicacion h2{
     font-size: 2em;
-    
+    margin: 10px;
+}
+
+#ubicacion iframe{
+    width: 700px;
+    height: 540px;
 }
