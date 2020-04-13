@@ -113,6 +113,7 @@ section:nth-child(3){
 #ubicacion h2{
     font-size: 2em;
     margin: 10px;
+    margin-bottom: 10px;
 }
 
 #ubicacion iframe{

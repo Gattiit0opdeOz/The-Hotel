@@ -4,7 +4,7 @@
     height: fit-content;
     position: relative;
     perspective: 1000px;
-    perspective-origin: 50% 50%;
+    perspective-origin: 30% 50%;
 }
 
 .imagenes{
