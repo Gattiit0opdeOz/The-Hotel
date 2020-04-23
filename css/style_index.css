@@ -59,6 +59,15 @@ iframe{
     background-color: var(--color-negro);
 }
 
+#demostraciones a{
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+/* Aqui aun no sé del todo si deberiamos hacer que se vea gris xd */
+#demostraciones a:hover{
+    color: var(--color-gris);
+}
+
 .contenedor-carrusel{
     display: flex;
     align-items: center;
@@ -96,15 +105,6 @@ iframe{
     margin-left: 10%;
 }
 
-.botonsito{
-    position: relative;
-    top: 20px;
-    color: var(--color-blanco);
-    padding: 10px;
-    background-color: var(--color-dorado);
-    border-radius: 5px;
-    text-decoration: none;
-}
 section:nth-child(3){
     padding-bottom: 40px;
 }
