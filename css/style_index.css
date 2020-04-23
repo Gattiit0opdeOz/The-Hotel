@@ -67,9 +67,14 @@ iframe{
     color: var(--color-blanco);
 }
 
-.contenedor-carrusel:nth-child(2){
+.contenedor-carrusel:nth-child(2) > .texto-desc{
     position: relative;
-    left: 10%;
+    left: 40%;
+}
+
+#carrusel-2 > .carousel-imagenes{
+    position: relative;
+    left: 20%;
 }
 
 .texto-desc:nth-child(2){

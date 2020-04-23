@@ -3,6 +3,8 @@
     width: 23%;
     height: fit-content;
     position: relative;
+    top: -20%;
+    left: -20%;
     perspective: 1000px;
     perspective-origin: 30% 50%;
 }
@@ -12,8 +14,8 @@
 }
 
 .imagenes, .imagenes > div{
-    width: 60%;
-    height: auto;
+    width: 240px;
+    height: 120px;
 }
 
 .foto{
