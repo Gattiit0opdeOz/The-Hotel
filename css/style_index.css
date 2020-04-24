@@ -66,6 +66,7 @@ iframe{
 /* Aqui aun no sé del todo si deberiamos hacer que se vea gris xd */
 #demostraciones a:hover{
     color: var(--color-gris);
+    cursor: pointer;
 }
 
 .contenedor-carrusel{
@@ -81,7 +82,7 @@ iframe{
     left: 40%;
 }
 
-#carrusel-2 > .carousel-imagenes{
+#restaurantes > .carousel-imagenes{
     position: relative;
     left: 20%;
 }
