@@ -40,7 +40,7 @@ main{
 }
 
 .nombre-lema h1{
-    font-size: 5em;
+    font-size: 7em;
     letter-spacing: 8px;
 }
 
@@ -56,16 +56,17 @@ iframe{
 #demostraciones{
     width: 100%;
     height: fit-content;
-    background-color: var(--color-negro);
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
 }
 
 #demostraciones a{
     text-decoration: none;
-    color: var(--color-blanco);
+    color: var(--color-negro);
 }
 /* Aqui aun no sé del todo si deberiamos hacer que se vea gris xd */
 #demostraciones a:hover{
-    color: var(--color-gris);
+    color: var(--color-dorado);
     cursor: pointer;
 }
 
@@ -74,7 +75,7 @@ iframe{
     align-items: center;
     justify-items: center;
     font-size: larger;
-    color: var(--color-blanco);
+    color: var(--color-negro);
 }
 
 .contenedor-carrusel:nth-child(2) > .texto-desc{
@@ -102,6 +103,10 @@ iframe{
     padding: 30px;
 }
 
+.lista-desc{
+    list-style: none;
+}
+
 .lista-desc,.botonsito{
     margin-left: 10%;
 }
@@ -110,7 +115,66 @@ section:nth-child(3){
     padding-bottom: 40px;
 }
 
+#casino{
+    width: 100%;
+    height: 500px;
+    font-size: x-large;
+    background-image: url(../img/casino-fondo.jpg);
+    background-position: right;
+    background-size: auto;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+#desc-casino{
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+#desc-casino h2{
+    font-size: 4em;
+}
+
+#desc-casino p, #desc-casino h2{
+    position: relative;
+    top: 60px;
+    left: 50px;
+}
+
+#desc-casino a{
+    color: var(--color-blanco);
+    background-color: var(--color-dorado);
+    position: relative;
+    top: 80px;
+    left: 50px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#desc-casino a:hover{
+    color: var(--color-negro);
+    background-color: #c0841d;
+    transition: all 1s linear;
+}
+
+#foto-dados-casino{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+#dados{
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
 #ubicacion{
+    display: block;
     background-color: var(--color-blanco);
     padding: 50px;
     text-align: center;
