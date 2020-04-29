@@ -21,6 +21,12 @@ main{
     height: fit-content;
     position: relative;
     top: 66px;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-top: 10px;
 }
 
 /* Slideshow container */
