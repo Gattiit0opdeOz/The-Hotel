@@ -70,6 +70,10 @@ iframe{
     cursor: pointer;
 }
 
+#habitaciones,#restaurantes,#actividades{
+    padding: 50px;
+}
+
 .contenedor-carrusel{
     display: flex;
     align-items: center;
