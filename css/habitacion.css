@@ -126,6 +126,57 @@ h1{
   background-color: var(--color-dorado);
 }
 
+#descripcion{
+  margin: 20px 20px 20px 0; 
+  font-size: 1.3em;
+  text-align: left;
+}
+
+#descripcion span{
+  position: relative;
+  left: 20%;
+}
+
+#descripcion ul{
+  width: 50%;
+  height: fit-content;
+  display: inline-block;
+}
+
+#descripcion ul > .contenedor-li-desc{
+  width: 100%;
+  position: relative;
+  left: 50%;
+  list-style: none;
+}
+
+#descripcion ul li::before {
+  content: "\2022";  
+  color: var(--color-dorado);
+  font-size: 1.3em;
+  font-weight: 900; 
+  display: inline-block; 
+  width: 15px;
+}
+
+#reservar{
+  width: 35%;
+  height: fit-content;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+#reservar a{
+  text-decoration: none;
+  color: var(--color-blanco);
+  background-color: var(--color-dorado);
+  padding: 10px;
+  border-radius: 30px;
+  position: absolute;
+  top: -130px;
+}
+
 /* Animación para desvanecer la imagen */
 .fade {
   -webkit-animation-name: fade;
