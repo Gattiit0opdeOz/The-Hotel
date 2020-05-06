@@ -161,8 +161,8 @@ section:nth-child(3){
 
 #desc-casino a:hover{
     color: var(--color-negro);
-    background-color: #c0841d;
-    transition: all 1s linear;
+    background-color: var(--color-blanco);
+    transition: all .3s linear;
 }
 
 #foto-dados-casino{
