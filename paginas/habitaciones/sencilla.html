@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/fonts.css">
+	<link rel="stylesheet" href="../../css/header_footer.css">
+	<link rel="stylesheet" href="../../css/habitacion.css">
+    <title>Sencilla</title>
+</head>
+<body>
+    <header class="header">
+		<div class="container logo-nav-container">
+			<a class="logo" href="../../index.html">The Hotel</a>
+			
+			<nav class="navegacion">
+				<ul>
+					<li class="icon-nav"><a href="../../index.html"><span class="icono"><i class="icon icon-home"></i> Habitaciones</a></li>
+
+					<li class="icon-nav"><a href="../../index.html#restaurantes"><span class="icono"><i class="icon icon-spoon-knife"></i> Restaurantes</a></li>
+
+					<li class="icon-nav"><a href="../../index.html#actividades_main"><span class="icono"><i class="icon icon-binoculars"></i> Actividades</a></li>
+
+					<li class="icon-nav"><a href="../../index.html#ubicacion"><span class="icono"><i class="icon icon-location"></i> Ubicación</a></li>
+
+					<li class="icon-nav"><a href="../../index.html#casino"><span class="icono"><i class="icon icon-spades"></i> Casino</a></li>
+
+				</ul>
+			</nav>
+		</div> 
+    </header>
+
+    <main>
+
+		<h1>Sencilla</h1>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="uptext">
+				  <h2>habitacion con dos camas indivuduales</h2>
+			  </div>
+			  <img src="../../img/sencilla-1.jpg">
+			  <div class="text">Caption Text</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="uptext">
+					<h2>lugar de trabajo</h2>
+				</div>
+			  <img src="../../img/sencilla-2.jpg">
+			  <div class="text">Caption Two</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="uptext">
+					<h2> sala de estar</h2>
+				</div>
+			  <img src="../../img/sencilla-3.jpg">
+			  <div class="text">Caption Three</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="uptext">
+					<h2>baño comodo y amplio</h2>
+				</div>
+				<img src="../../img/sencilla-4.jpg">
+				<div class="text">Caption four</div>
+			  </div>
+			
+			<a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a id="next" onclick="plusSlides(1)">&#10095;</a>
+			
+		</div>
+			
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span> 
+		</div>
+
+		<article>
+			<section id="descripcion">
+				<p>
+					<span>El penthouse cuenta con:</span>
+					<ul>
+						<div class="contenedor-li-desc">
+                            <li>1 sala de estar</li>
+                            <li>escritorio de trabajo</li>
+							<li>1 habitacion</li>
+							<li>1 baños</li>
+						</div>
+					</ul>
+					<div id="reservar">
+						<a href="">Reservar</a>
+					</div>
+				</p>
+			</section>
+		</article>
+			
+		<script src="../../js/carrusel.js"></script>
+    </main>
+    
+    <footer id="footer">
+		<div id="columnas-footer">
+			<ul class="columna-footer">
+				<li class="item-footer"><a href="#">Habitaciones</a></li>
+				<li class="item-footer"><a href="#">Penthouse</a></li>
+				<li class="item-footer"><a href="#">De lujo</a></li>
+				<li class="item-footer"><a href="#">Doble</a></li>
+				<li class="item-footer"><a href="#">Sencilla</a></li>
+			</ul>
+			<ul class="columna-footer">
+				<li class="item-footer"><a href="#">Restaurantes</a></li>
+				<li class="item-footer"><a href="#">Méxicano</a></li>
+				<li class="item-footer"><a href="#">Italiano</a></li>
+				<li class="item-footer"><a href="#">Chino</a></li>
+			</ul>
+			<ul class="columna-footer">
+				<li class="item-footer"><a href="#">Actividades</a></li>
+			</ul>
+			<ul class="columna-footer">
+				<li class="item-footer"><a href="#">Casino</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="contenedor-derechos">
+			<p>
+				&copy; The Hotel SA
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
