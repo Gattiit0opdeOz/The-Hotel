@@ -219,7 +219,7 @@ section:nth-child(3){
     }
     #restaurantes .texto-desc{
         position: relative;
-        left: 70px;
+        left: 6%;
         top: 80px;
     }
     #actividades .texto-desc{

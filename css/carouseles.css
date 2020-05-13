@@ -133,18 +133,18 @@
         height: fit-content;
         position: relative;
         top: 160px;
-        left: -400px;
+        left: -40%;
         perspective: 1000px;
         perspective-origin: 30% 50%;
     }
     #restaurantes .carousel-imagenes{
         position: relative;
         top: 220px;
-        left: 320px;
+        left: 36%;
     }
     #actividades .carousel-imagenes{
         position: relative;
         top: 280px;
-        left: -400px;
+        left: -40%;
     }
 }
