@@ -195,7 +195,7 @@ section:nth-child(3){
     width: 700px;
     height: 540px;
 }
-
+/*para que no se vea feo xd*/
 @media(max-width: 1049px){
     #presentación{
         position: relative;
@@ -210,7 +210,7 @@ section:nth-child(3){
     }
     iframe{
         width: 70%; 
-        height: 500px;
+        height: 400px;
         margin-left: 10%;
     }
     .texto-desc{
@@ -238,4 +238,59 @@ section:nth-child(3){
         position: relative;
         top: 260px;
     }
+}
+/*para que no se vea feo x2 xd*/
+@media(max-width: 980px){
+    #casino{
+        width: 100%;
+        height: 600px;
+        font-size: xx-large;
+        background-image: url(../img/casino-fondo.jpg);
+        background-position: 0 600px;
+        background-size: cover;
+    }
+    #desc-casino{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+/*para que no se vea feo x3 xd*/
+@media(max-width: 800px){
+    .nombre-lema{
+        width: 80%;
+        position: relative;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    iframe{
+        width: 70%; 
+        height: 400px;
+        margin-left: 10%;
+    }
+    .texto-desc{
+        position: relative;
+        left: 20%;
+    }
+    #restaurantes .texto-desc{
+        position: relative;
+        left: -4%;
+        top: 80px;
+    }
+    #actividades .texto-desc{
+        position: relative;
+        top: 120px;
+    }
+    #casino{
+        font-size: medium;
+    }
+    #desc-casino{
+        width: 100%;
+        height: 40%;
+    }
+}
+
+/*para telefonos*/
+@media(max-width: 400px){
+
 }
