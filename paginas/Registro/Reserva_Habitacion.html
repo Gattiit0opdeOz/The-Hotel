@@ -3,39 +3,94 @@
 <head>
 	<title>Registro</title>
 	<link rel="stylesheet" href="Registro.css">
+	<link rel="stylesheet" href="../../css/fonts.css">
+	<link rel="stylesheet" href="../../css/header_footer.css">
 	<meta charset="utf-8">
 </head>
 <body>
 
-	<p class="titulo">Reserva</p> <br>
+	<header class="header">
+		<div class="container logo-nav-container">
+			<a class="logo" href="../../index.html">The Hotel</a>
+			
+			<nav class="navegacion">
+				<ul>
+					<li class="icon-nav"><a href="../../index.html"><span class="icono"><i class="icon icon-home"></i> Habitaciones</a></li>
 
-	<form action="#" method="POST">
+					<li class="icon-nav"><a href="../../index.html#restaurantes"><span class="icono"><i class="icon icon-spoon-knife"></i> Restaurantes</a></li>
 
-		<label for="nombre">Nombre Completo</label>
-		<input type="text" name="nombre" class="field" required><br><br>
+					<li class="icon-nav"><a href="../../index.html#actividades_main"><span class="icono"><i class="icon icon-binoculars"></i> Actividades</a></li>
 
-		<label for="correo">Correo Electronico</label>
-		<input type="email" name="correo" class="field" required> <br> <br>
+					<li class="icon-nav"><a href="../../index.html#ubicacion"><span class="icono"><i class="icon icon-location"></i> Ubicación</a></li>
 
-		<label for="fecha">Fecha de Llegada</label>
-		<input type="date" name="fecha" class="field" required> <br> <br>
+					<li class="icon-nav"><a href="../../index.html#casino"><span class="icono"><i class="icon icon-spades"></i> Casino</a></li>
 
-		<label for="fecha">Fecha de Salida</label>
-		<input type="date" name="fecha" class="field" required> <br> <br>
+				</ul>
+			</nav>
+		</div> 
+    </header>
 
-		<label for="sexo">Sexo</label> <br> <br>
-		<input type="radio" name="sexo" required>
-		<label class="sex">Hombre</label>
-		<input type="radio" name="sexo" required>
-		<label class="sex">Mujer</label>
-		<input type="radio" name="sexo" required>
-		<label class="sex">Perzonalizado</label> <br> <br>
+	<main>
+		<p class="titulo">Reserva</p> <br>
 
-		<input type="submit" class="boton"> <br><br>
-		<input type="reset" class="boton">
+		<form action="#" method="POST">
+
+			<label for="nombre">Nombre Completo</label>
+			<input type="text" name="nombre" class="field" required><br><br>
+
+			<label for="correo">Correo Electronico</label>
+			<input type="email" name="correo" class="field" required> <br> <br>
+
+			<label for="fecha">Fecha de Llegada</label>
+			<input type="date" name="fecha" class="field" required> <br> <br>
+
+			<label for="fecha">Fecha de Salida</label>
+			<input type="date" name="fecha" class="field" required> <br> <br>
+
+			<label for="sexo">Sexo</label> <br> <br>
+			<input type="radio" name="sexo" required>
+			<label class="sex">Hombre</label>
+			<input type="radio" name="sexo" required>
+			<label class="sex">Mujer</label>
+			<input type="radio" name="sexo" required>
+			<label class="sex">Perzonalizado</label> <br> <br>
+
+			<input type="submit" class="boton"> <br><br>
+			<input type="reset" class="boton">
 
 
-	</form>
+		</form>
+	</main>
+
+	<footer id="footer">
+		<div id="columnas-footer">
+			<ul class="columna-footer">
+				<li class="item-footer"><a href="#">Habitaciones</a></li>
+				<li class="item-footer"><a href="#">Penthouse</a></li>
+				<li class="item-footer"><a href="#">De lujo</a></li>
+				<li class="item-footer"><a href="#">Doble</a></li>
+				<li class="item-footer"><a href="#">Sencilla</a></li>
+			</ul>
+			<ul class="columna-footer">
+				<li class="item-footer"><a href="#">Restaurantes</a></li>
+				<li class="item-footer"><a href="#">Méxicano</a></li>
+				<li class="item-footer"><a href="#">Italiano</a></li>
+				<li class="item-footer"><a href="#">Chino</a></li>
+			</ul>
+			<ul class="columna-footer">
+				<li class="item-footer"><a href="#">Actividades</a></li>
+			</ul>
+			<ul class="columna-footer">
+				<li class="item-footer"><a href="#">Casino</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="contenedor-derechos">
+			<p>
+				&copy; The Hotel SA
+			</p>
+		</div>
+	</footer>
 
 </body>
 </html>
