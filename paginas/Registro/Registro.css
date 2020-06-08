@@ -27,9 +27,9 @@ header{
 main{
     width: 100vw;
     position: relative;
-	top: 66px;
-	padding-bottom: 65px;
-	padding-top: 66px;
+	top: 64px;
+	padding-bottom: 70px;
+	padding-top: 60px;
 	background-image: url(../../img/fondo-registro.jpg);
 	background-size: cover;
 }
