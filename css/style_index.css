@@ -20,7 +20,6 @@ main{
     width: 100vw;
     height: fit-content;
     position: relative;
-    top: 60px;
 }
 
 #presentación{
@@ -32,6 +31,8 @@ main{
     flex-direction: row-reverse;
     flex-wrap: wrap;
     color: var(--color-blanco);
+    position:relative;
+    top:-5px;
 }
 
 .nombre-lema{
