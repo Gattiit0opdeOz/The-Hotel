@@ -1,0 +1,25 @@
+/*
+	Defino las variables aqui para que puedan ser usadas por todos los selectores
+	para usarlas, en el momento de necesitar poner colores: var(--nombre,por si no se encuentra aqui poner el color normal)
+	así para modificar algun color,solo lo hariamos desde aquí
+*/
+:root{
+	--color-blanco: #efedeb;
+	--color-gris: #949495;
+	--color-dorado: #e39e24;
+	--color-dorado-oscuro: #926226;
+	--color-negro: #212020;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Ahora aqui que sea mejor los estilos para la principal */
+main{
+    width: 100vw;
+    position: relative;
+	top: 66px;
+	padding-bottom: 60px;
+}
