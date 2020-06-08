@@ -48,8 +48,9 @@
         //le damos un link para ir a la pagina de registro
 		echo "<div class=\"img-fondo\">
 			<p class=\"gracias-mensaje\">
-            	Hola $nombre!, gracias por elegir The Hotel como tu mejor opcion <br>
-            	Te enviaremos un correo electrónico con el cual podras acceder a tu habitación reservada
+            	Hola $nombre!, gracias por elegir The Hotel <br> como tu mejor opcion <br>
+				Te enviaremos un correo electrónico con el <br> cual podras acceder a <br>
+				tu habitación reservada
 			</p>
 		</div>";
     }
