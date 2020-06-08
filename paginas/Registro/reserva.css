@@ -37,3 +37,9 @@ main{
     text-align: center;
     font-size: large;
 }
+
+.img-fondo {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../../img/fondo-gracias.jpg);
+}

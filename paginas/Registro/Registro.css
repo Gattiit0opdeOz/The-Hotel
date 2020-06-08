@@ -27,6 +27,7 @@ main{
     position: relative;
 	top: 66px;
 	padding-bottom: 60px;
+	background-image: url(../../img/fondo-registro.jpg);
 }
 
 .titulo{

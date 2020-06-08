@@ -46,17 +46,17 @@
         }
 
         //le damos un link para ir a la pagina de registro
-        echo "<p class=\"gracias-mensaje\">
-            Hola $nombre!, gracias por elegir The Hotel como tu mejor opcion <br>
-            Te enviaremos un correo electrónico con el cual podras acceder a tu habitación reservada
-        </p>";
+		echo "<div class=\"img-fondo\">
+			<p class=\"gracias-mensaje\">
+            	Hola $nombre!, gracias por elegir The Hotel como tu mejor opcion <br>
+            	Te enviaremos un correo electrónico con el cual podras acceder a tu habitación reservada
+			</p>
+		</div>";
     }
     //por si algo sale mal
     catch (Exception $e) {
-        //le damos un link para ir a la pagina de registro
-        echo "<p class=\"error-message\">
-            No se ha llenado el formulario, por favor dirigase a <a href=\"..//Registro\">Registro</a>
-        </p>";
+        //Mandamos al usuario a la página de registro
+        header('Location: ../Registro');
     }
 ?>
 
