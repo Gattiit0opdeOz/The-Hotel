@@ -33,14 +33,25 @@
 
 <?php
     try {
-        $nombre = $_POST['nombre'];
-        $correo = $_POST['correo'];
-        $fecha = $_POST['fecha'];
-        $fecha_salida = $_POST['fecha-salida'];
-        $sexo = $_POST['sexo'];
+        //tomamos la información
+        $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
+        $correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
+        $fecha = (isset($_POST['fecha'])) ? $_POST['fecha'] : '';
+        $fecha_salida = (isset($_POST['fecha-salida'])) ? $_POST['fecha-salida'] : '';
+        $sexo = (isset($_POST['sexo'])) ? $_POST['sexo'] : '';
+        
+        //comprobamos que todo se mando bien
+        if($nombre == '' || $correo == '' || $fecha == '' || $fecha_salida == '' || $sexo == '') {
+          throw new Exception();
+        }
 
-    } catch (Exception $e) {
-        echo "ALgo salio muy mal jeje";
+    }
+    //por si algo sale mal
+    catch (Exception $e) {
+        //le damos un link para ir a la pagina de registro
+        echo "<p class=\"error-message\">
+            No se ha llenado el formulario, por favor dirigase a <a href=\"..//Registro\">Registro</a>
+        </p>";
     }
 ?>
 

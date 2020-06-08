@@ -20,6 +20,13 @@
 main{
     width: 100vw;
     position: relative;
-	top: 66px;
+	top: 65px;
 	padding-bottom: 60px;
+}
+
+.error-message {
+    min-height: 45vh;
+    padding-top: 5vh;
+    text-align: center;
+    font-size: large;
 }
