@@ -31,7 +31,9 @@ main{
 
 .gracias-mensaje {
     min-height: 45vh;
-    padding-top: 5vh;
+	padding-top: 5vh;
+	margin-left: 50px;
+	color: white;
     font-size: large;
 }
 
