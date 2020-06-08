@@ -45,6 +45,11 @@
           throw new Exception();
         }
 
+        //le damos un link para ir a la pagina de registro
+        echo "<p class=\"gracias-mensaje\">
+            Hola $nombre!, gracias por elegir The Hotel como tu mejor opcion <br>
+            Te enviaremos un correo electrónico con el cual podras acceder a tu habitación reservada
+        </p>";
     }
     //por si algo sale mal
     catch (Exception $e) {

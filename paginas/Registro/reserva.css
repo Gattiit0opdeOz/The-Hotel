@@ -30,3 +30,10 @@ main{
     text-align: center;
     font-size: large;
 }
+
+.gracias-mensaje {
+    min-height: 45vh;
+    padding-top: 5vh;
+    text-align: center;
+    font-size: large;
+}
