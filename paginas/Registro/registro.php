@@ -1,16 +1,3 @@
-<?php
-    try {
-        $nombre = $_POST['nombre'];
-        $correo = $_POST['correo'];
-        $fecha = $_POST['fecha'];
-        $fecha_salida = $_POST['fecha-salida'];
-        $sexo = $_POST['sexo'];
-
-    } catch (Throwable $th) {
-        echo $th;
-    }
-    ?>
-
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
@@ -44,9 +31,18 @@
     </header>
     <main>
 
-        <?php 
-            echo $nombre;
-        ?>
+<?php
+    try {
+        $nombre = $_POST['nombre'];
+        $correo = $_POST['correo'];
+        $fecha = $_POST['fecha'];
+        $fecha_salida = $_POST['fecha-salida'];
+        $sexo = $_POST['sexo'];
+
+    } catch (Exception $e) {
+        echo "ALgo salio muy mal jeje";
+    }
+?>
 
     </main>
     <footer id="footer">
