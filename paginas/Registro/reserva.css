@@ -21,7 +21,6 @@ main{
     width: 100vw;
     position: relative;
 	top: 60px;
-	padding-bottom: 60px;
 }
 
 .error-message {
@@ -33,7 +32,6 @@ main{
 .gracias-mensaje {
     min-height: 45vh;
     padding-top: 5vh;
-    text-align: center;
     font-size: large;
 }
 
