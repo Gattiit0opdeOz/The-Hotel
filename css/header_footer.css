@@ -27,7 +27,7 @@ html,body{
 	right: 0;
 	background:  var(--color-negro);
 	color: var(--color-blanco);
-	padding: 16px 0;
+	padding: 17px 0;
 	position: fixed;
 	z-index: 1;
 }
