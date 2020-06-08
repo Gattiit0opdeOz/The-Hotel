@@ -25,9 +25,8 @@ main{
 }
 
 .error-message {
-    min-height: 45vh;
+    min-height: 35vh;
     padding-top: 5vh;
-    text-align: center;
     font-size: large;
 }
 
@@ -42,4 +41,9 @@ main{
 	width: 100vw;
 	height: 100vh;
 	background-image: url(../../img/fondo-gracias.jpg);
+	background-size: cover;
+}
+
+footer {
+	margin: 0;
 }
