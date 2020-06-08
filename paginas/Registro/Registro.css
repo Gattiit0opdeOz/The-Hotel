@@ -19,6 +19,9 @@
 body{
 	font-family: calibri, Helvetica, sans-serif;
 }
+header{
+	font-family: 'Times New Roman', Times, serif;
+}
 
 /* Ahora aqui que sea mejor los estilos para la principal */
 main{
@@ -26,10 +29,10 @@ main{
     position: relative;
 	top: 66px;
 	padding-bottom: 60px;
+	padding-top: 62px;
 	background-image: url(../../img/fondo-registro.jpg);
 	background-size: cover;
 }
-
 .titulo{
 	margin-top: 30px;
 	font-size: 40px;
