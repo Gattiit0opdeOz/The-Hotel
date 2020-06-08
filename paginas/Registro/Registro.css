@@ -17,7 +17,6 @@
 }
 
 body{
-	background-color: var(--color-gris);
 	font-family: calibri, Helvetica, sans-serif;
 }
 
@@ -28,6 +27,7 @@ main{
 	top: 66px;
 	padding-bottom: 60px;
 	background-image: url(../../img/fondo-registro.jpg);
+	background-size: cover;
 }
 
 .titulo{
