@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reserva.css">
+	<link rel="stylesheet" href="reserva.css">
+	<link rel="shortcut icon" href="../../img/icono.png" type="image/x-icon">
 	<link rel="stylesheet" href="../../css/fonts.css">
 	<link rel="stylesheet" href="../../css/header_footer.css">
     <title>Reserva</title>
@@ -35,7 +36,8 @@
     try {
         //tomamos la información
         $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
-        $correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
+		$correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
+		$habitacion = (isset($_POST['habitacion'])) ? $_POST['habitacion'] : '';
         $fecha = (isset($_POST['fecha'])) ? $_POST['fecha'] : '';
         $fecha_salida = (isset($_POST['fecha-salida'])) ? $_POST['fecha-salida'] : '';
         $sexo = (isset($_POST['sexo'])) ? $_POST['sexo'] : '';
@@ -47,12 +49,18 @@
 
         //le damos un link para ir a la pagina de registro
 		echo "<div class=\"img-fondo\">
-			<p class=\"gracias-mensaje\">
-            	Hola $nombre!<br> gracias por elegir The Hotel  como tu mejor opcion <br>
+			<div class=\"gracias-mensaje\">
+				<span>Hola $nombre!</span> 
+				<p>Gracias por elegir The Hotel  como tu mejor opcion <br>
 				Te enviaremos un correo electrónico con el cual podras acceder a <br>
-				tu habitación reservada
-			</p>
+				tu habitación reservada</p>
+			</div>
 		</div>";
+		// $asunto = "Tu reserva está lista!";
+		// $mensaje = "Hola $nombre, estoy probando el envio de correos jeje";
+		// $from = "correodelhost@example.com";
+		// mail($correo, $asunto, $mensaje, "From: $from" . "\r\n" . "Content-Type: text/plain; charset=utf-8");
+
     }
     //por si algo sale mal
     catch (Exception $e) {
