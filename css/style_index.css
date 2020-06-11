@@ -20,6 +20,7 @@ main{
     width: 100vw;
     height: fit-content;
     position: relative;
+    top: 40px;
 }
 
 #presentación{
@@ -160,7 +161,7 @@ section:nth-child(3){
     border-radius: 50px;
 }
 
-#desc-casino a:hover{
+#desc-casino a:hover, #info-registro a:hover{
     color: var(--color-negro);
     background-color: var(--color-blanco);
     transition: all .3s linear;
@@ -195,6 +196,30 @@ section:nth-child(3){
 #ubicacion iframe{
     width: 700px;
     height: 540px;
+}
+
+#info-registro {
+    position: relative;
+    padding: 50px;
+    top: 40px;
+    min-height: 300px;
+    text-align: center;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+#info-registro a {
+    color: var(--color-blanco);
+    background-color: var(--color-dorado);
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    top: 40px;
+}
+
+.reservas {
+    position: relative;
+    top: 70px;
 }
 /*para que no se vea feo xd*/
 @media(max-width: 1049px){

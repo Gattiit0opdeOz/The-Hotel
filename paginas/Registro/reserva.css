@@ -33,7 +33,16 @@ main{
 	padding-top: 15vh;
 	margin-left: 30%;
 	color: white;
-    font-size: 2em;
+    font-size: 1.3em;
+}
+
+.gracias-mensaje span {
+	font-size: 1.6em;
+}
+
+a , a:visited{
+	text-decoration: none;
+	color: var(--color-dorado);
 }
 
 .img-fondo {

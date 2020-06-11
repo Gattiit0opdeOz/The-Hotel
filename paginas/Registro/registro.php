@@ -12,19 +12,19 @@
 <body>
     <header class="header">
 		<div class="container logo-nav-container">
-			<a class="logo" href="../../index.html">The Hotel</a>
+			<a class="logo" href="../../">The Hotel</a>
 			
 			<nav class="navegacion">
 				<ul>
-					<li class="icon-nav"><a href="../../index.html"><span class="icono"><i class="icon icon-home"></i> Habitaciones</a></li>
+					<li class="icon-nav"><a href="../../"><span class="icono"><i class="icon icon-home"></i> Habitaciones</a></li>
 
-					<li class="icon-nav"><a href="../../index.html#restaurantes"><span class="icono"><i class="icon icon-spoon-knife"></i> Restaurantes</a></li>
+					<li class="icon-nav"><a href="../../#restaurantes"><span class="icono"><i class="icon icon-spoon-knife"></i> Restaurantes</a></li>
 
-					<li class="icon-nav"><a href="../../index.html#actividades_main"><span class="icono"><i class="icon icon-binoculars"></i> Actividades</a></li>
+					<li class="icon-nav"><a href="../../#actividades_main"><span class="icono"><i class="icon icon-binoculars"></i> Actividades</a></li>
 
-					<li class="icon-nav"><a href="../../index.html#ubicacion"><span class="icono"><i class="icon icon-location"></i> Ubicación</a></li>
+					<li class="icon-nav"><a href="../../#ubicacion"><span class="icono"><i class="icon icon-location"></i> Ubicación</a></li>
 
-					<li class="icon-nav"><a href="../../index.html#casino"><span class="icono"><i class="icon icon-spades"></i> Casino</a></li>
+					<li class="icon-nav"><a href="../../#casino"><span class="icono"><i class="icon icon-spades"></i> Casino</a></li>
 
 				</ul>
 			</nav>
@@ -52,8 +52,10 @@
 			<div class=\"gracias-mensaje\">
 				<span>Hola $nombre!</span> 
 				<p>Gracias por elegir The Hotel  como tu mejor opcion <br>
-				Te enviaremos un correo electrónico con el cual podras acceder a <br>
-				tu habitación reservada</p>
+				Puedes acceder <a href=\"\">a tu reserva</a> con tu <br>
+				correo electronico y tu contraseña <br>
+				Se te mostrará información sobre esta misma y <br>
+				un código QR, el cual debes mostrar en la recepción.</p>
 			</div>
 		</div>";
 		// $asunto = "Tu reserva está lista!";
