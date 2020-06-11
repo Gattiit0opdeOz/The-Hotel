@@ -37,13 +37,14 @@
         //tomamos la información
         $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
 		$correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
+		$contraseña = (isset($_POST['contraseña'])) ? $_POST['contraseña'] : '';
 		$habitacion = (isset($_POST['habitacion'])) ? $_POST['habitacion'] : '';
         $fecha = (isset($_POST['fecha'])) ? $_POST['fecha'] : '';
         $fecha_salida = (isset($_POST['fecha-salida'])) ? $_POST['fecha-salida'] : '';
         $sexo = (isset($_POST['sexo'])) ? $_POST['sexo'] : '';
         
         //comprobamos que todo se mando bien
-        if($nombre == '' || $correo == '' || $fecha == '' || $fecha_salida == '' || $sexo == '') {
+        if($nombre == '' || $correo == '' || $fecha == '' || $fecha_salida == '' || $sexo == '' || $contraseña == '') {
           throw new Exception();
         }
 
