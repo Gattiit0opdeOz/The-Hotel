@@ -35,34 +35,33 @@
 <?php
     try {
         //tomamos la información
-        $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
 		$correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
-		$contraseña = (isset($_POST['contraseña'])) ? password_hash($_POST['contraseña'], PASSWORD_BCRYPT) : '';
-		$habitacion = (isset($_POST['habitacion'])) ? $_POST['habitacion'] : '';
-        $fecha = (isset($_POST['fecha'])) ? $_POST['fecha'] : '';
-        $fecha_salida = (isset($_POST['fecha-salida'])) ? $_POST['fecha-salida'] : '';
-		$sexo = (isset($_POST['sexo'])) ? $_POST['sexo'] : '';
-		
-		$user = 'root';
+		$contraseña = (isset($_POST['contraseña'])) ? $_POST['contraseña'] : '';
+        
+        $user = 'root';
         $password = '';
         $server = 'localhost';
         $db = 'the_hotel'; 
 		$conexion = mysqli_connect($server,$user,$password,$db);
 		
 		if(!$conexion) {
-			echo "<h1 class=\".error-message\">Ocurrió un error, por favor intentelo de nuevo más tarde 1</h1>";
+			//por seguridad, si no está bien ningún dato lo mandaremos de regreso al formulario
+            throw new Exception();
 		} else {
 			//comprobamos que todo se mando bien
 			if($nombre == '' || $correo == '' || $fecha == '' || $fecha_salida == '' || $sexo == '' || $contraseña == '') {
 				throw new Exception();
 			}
 			//guardamos todo el base de datos
-			$sql = "insert into reservas(id,nombre,correo,contraseña,habitacion,fecha_llegada,fecha_salida,sexo) values(null,'$nombre','$correo','$contraseña','$habitacion','$fecha','$fecha_salida','$sexo')";
-			$agregar = $conexion->query($sql);
-        	if(!$agregar){
-        	    echo "<p class=\".error-message\">Ocurrió un error, por favor intentelo de nuevo más tarde 2</p>";
+			$sql = "select contraseña from reservas where correo='$correo'";
+			$pass = $conexion->query($sql);
+        	if(!$pass){
+                //por seguridad, si no está bien ningún dato lo mandaremos de regreso al formulario
+                throw new Exception();
         	}else{
-        	    //le damos un link para ir a la pagina de registro
+                //validamos la contraseña
+                echo $pass;
+        	    //le mostramos la info
 				echo "<div class=\"img-fondo\">
 					<div class=\"gracias-mensaje\">
 						<span>Hola $nombre!</span> 
@@ -79,7 +78,7 @@
     //por si algo sale mal
     catch (Exception $e) {
         //Mandamos al usuario a la página de registro
-        header('Location: ../Registro');
+        header('Location: ../Registro/reserva.html');
     }
 ?>
 
