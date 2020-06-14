@@ -37,34 +37,46 @@
         //tomamos la información
         $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
 		$correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
-		$contraseña = (isset($_POST['contraseña'])) ? $_POST['contraseña'] : '';
+		$contraseña = (isset($_POST['contraseña'])) ? password_hash($_POST['contraseña'], PASSWORD_BCRYPT) : '';
 		$habitacion = (isset($_POST['habitacion'])) ? $_POST['habitacion'] : '';
         $fecha = (isset($_POST['fecha'])) ? $_POST['fecha'] : '';
         $fecha_salida = (isset($_POST['fecha-salida'])) ? $_POST['fecha-salida'] : '';
-        $sexo = (isset($_POST['sexo'])) ? $_POST['sexo'] : '';
-        
-        //comprobamos que todo se mando bien
-        if($nombre == '' || $correo == '' || $fecha == '' || $fecha_salida == '' || $sexo == '' || $contraseña == '') {
-          throw new Exception();
-        }
-
-        //le damos un link para ir a la pagina de registro
-		echo "<div class=\"img-fondo\">
-			<div class=\"gracias-mensaje\">
-				<span>Hola $nombre!</span> 
-				<p>Gracias por elegir The Hotel  como tu mejor opcion <br>
-				Puedes acceder <a href=\"\">a tu reserva</a> con tu <br>
-				correo electronico y tu contraseña <br>
-				Se te mostrará información sobre esta misma y <br>
-				un código QR, el cual debes mostrar en la recepción.</p>
-			</div>
-		</div>";
-		// $asunto = "Tu reserva está lista!";
-		// $mensaje = "Hola $nombre, estoy probando el envio de correos jeje";
-		// $from = "correodelhost@example.com";
-		// mail($correo, $asunto, $mensaje, "From: $from" . "\r\n" . "Content-Type: text/plain; charset=utf-8");
-
-    }
+		$sexo = (isset($_POST['sexo'])) ? $_POST['sexo'] : '';
+		
+		$user = 'root';
+        $password = '';
+        $server = 'localhost';
+        // nota, se me olvido que para que funcione en su maquina le mande la db con otro nombre xd
+        $db = 'the_hotel'; 
+		$conexion = mysqli_connect($server,$user,$password,$db);
+		
+		if(!$conexion) {
+			echo "<h1 class=\".error-message\">Ocurrió un error, por favor intentelo de nuevo más tarde 1</h1>";
+		} else {
+			//comprobamos que todo se mando bien
+			if($nombre == '' || $correo == '' || $fecha == '' || $fecha_salida == '' || $sexo == '' || $contraseña == '') {
+				throw new Exception();
+			}
+			//guardamos todo el base de datos
+			$sql = "insert into reservas(id,nombre,correo,contraseña,habitacion,fecha_llegada,fecha_salida,sexo) values(null,'$nombre','$correo','$contraseña','$habitacion','$fecha','$fecha_salida','$sexo')";
+			$agregar = $conexion->query($sql);
+        	if(!$agregar){
+        	    echo "<p class=\".error-message\">Ocurrió un error, por favor intentelo de nuevo más tarde 2</p>";
+        	}else{
+        	    //le damos un link para ir a la pagina de registro
+				echo "<div class=\"img-fondo\">
+					<div class=\"gracias-mensaje\">
+						<span>Hola $nombre!</span> 
+						<p>Gracias por elegir The Hotel  como tu mejor opcion <br>
+						Puedes acceder <a href=\"\">a tu reserva</a> con tu <br>
+						correo electronico y tu contraseña <br>
+						Se te mostrará información sobre esta misma y <br>
+						un código QR, el cual debes mostrar en la recepción.</p>
+					</div>
+				</div>";
+        	}
+		}
+	}
     //por si algo sale mal
     catch (Exception $e) {
         //Mandamos al usuario a la página de registro
