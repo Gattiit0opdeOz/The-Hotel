@@ -49,29 +49,48 @@
             throw new Exception();
 		} else {
 			//comprobamos que todo se mando bien
-			if($nombre == '' || $correo == '' || $fecha == '' || $fecha_salida == '' || $sexo == '' || $contraseña == '') {
+			if($correo == '' || $contraseña == '') {
 				throw new Exception();
 			}
 			//guardamos todo el base de datos
-			$sql = "select contraseña from reservas where correo='$correo'";
-			$pass = $conexion->query($sql);
+			$sql = "select * from reservas";
+			$result = mysqli_query($conexion, $sql);
+			if (mysqli_num_rows($result) > 0) {
+				$row = mysqli_fetch_assoc($result);
+				$nombre = $row['nombre'];
+				$email = $row['correo'];
+				$pass = $row['contraseña'];
+				$habitacion = $row['habitacion'];
+				$fecha_entrada = $row['fecha_llegada'];
+				$fecha_salida = $row['fecha_salida'];
+			 } else {
+				throw new Exception();
+			 }
+			 
         	if(!$pass){
                 //por seguridad, si no está bien ningún dato lo mandaremos de regreso al formulario
                 throw new Exception();
         	}else{
                 //validamos la contraseña
-                echo $pass;
-        	    //le mostramos la info
-				echo "<div class=\"img-fondo\">
-					<div class=\"gracias-mensaje\">
-						<span>Hola $nombre!</span> 
-						<p>Gracias por elegir The Hotel  como tu mejor opcion <br>
-						Puedes acceder <a href=\"reserva.html\">a tu reserva</a> con tu <br>
-						correo electronico y tu contraseña <br>
-						Se te mostrará información sobre esta misma y <br>
-						un código QR, el cual debes mostrar en la recepción.</p>
-					</div>
-				</div>";
+				$valid = password_verify($contraseña, $pass);
+				if($valid) {
+					//le mostramos la info
+					echo "<div class=\"img-fondo\">
+						<div class=\"gracias-mensaje\">
+							<span>Hola $nombre!</span>
+							<p>
+								Tu reserva: 
+								<ul>
+									<li>Tipo de habitación: $habitacion</li>
+									<li>Fecha de entrada: $fecha_entrada</li>
+									<li>Fecha de salida: $fecha_salida</li>
+								</ul>
+							</p>
+						</div>
+					</div>";
+				} else {
+					throw new Exception();
+				}
         	}
 		}
 	}

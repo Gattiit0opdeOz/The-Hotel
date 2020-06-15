@@ -23,12 +23,6 @@ main{
 	top: 60px;
 }
 
-.error-message {
-    min-height: 35vh;
-    padding-top: 5vh;
-    font-size: large;
-}
-
 .gracias-mensaje {
 	padding-top: 15vh;
 	margin-left: 30%;
@@ -45,6 +39,10 @@ a , a:visited{
 	color: var(--color-dorado);
 }
 
+a:hover {
+	color: var(--color-dorado-oscuro);
+}
+
 .img-fondo {
 	position: relative;
 	top: 5px;
@@ -52,4 +50,10 @@ a , a:visited{
 	height: 90vh;
 	background-image: url(../../img/fondo-gracias.jpg);
 	background-size: cover;
+}
+
+li {
+	position: relative;
+	left: 40px;
+	list-style: none;
 }

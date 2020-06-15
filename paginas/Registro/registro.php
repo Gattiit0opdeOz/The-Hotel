@@ -50,7 +50,7 @@
 		$conexion = mysqli_connect($server,$user,$password,$db);
 		
 		if(!$conexion) {
-			echo "<h1 class=\".error-message\">Ocurrió un error, por favor intentelo de nuevo más tarde 1</h1>";
+			throw new Exception();
 		} else {
 			//comprobamos que todo se mando bien
 			if($nombre == '' || $correo == '' || $fecha == '' || $fecha_salida == '' || $sexo == '' || $contraseña == '') {
@@ -60,7 +60,7 @@
 			$sql = "insert into reservas(id,nombre,correo,contraseña,habitacion,fecha_llegada,fecha_salida,sexo) values(null,'$nombre','$correo','$contraseña','$habitacion','$fecha','$fecha_salida','$sexo')";
 			$agregar = $conexion->query($sql);
         	if(!$agregar){
-        	    echo "<p class=\".error-message\">Ocurrió un error, por favor intentelo de nuevo más tarde 2</p>";
+        	    throw new Exception();
         	}else{
         	    //le damos un link para ir a la pagina de registro
 				echo "<div class=\"img-fondo\">
