@@ -1,0 +1,263 @@
+:root{
+	--color-blanco: #efedeb;
+	--color-gris: #949495;
+	--color-dorado: #e39e24;
+	--color-dorado-oscuro: #926226;
+	--color-negro: #212020;
+	--color-morado: rgb(145,119,126);
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+    background-color: rgb(145,119,126);
+
+}
+#regreso{
+    position: relative;
+   
+    font-size:15px;
+    font-family: 'Bellota', cursive;
+    background: #68586d;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100px;
+    
+    text-decoration: none;
+    box-shadow: 0px 3px 0px #282329;
+    border-radius: 50px;
+ }
+
+.mex{
+	border-radius: 20%;
+	
+}
+ #regreso:hover {
+    box-shadow: 0px 3px 0px #6e5c72c7;
+	cursor: pointer;
+ }
+.header{
+	left: 0;
+	right: 0;
+	background:  var(--color-negro);
+	color: var(--color-blanco);
+	padding: 15px 0;
+	position: fixed;
+	z-index: 1;
+}
+
+.header a{
+	color: var(--color-blanco);
+	text-decoration: none;
+}
+
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo{
+	margin-left: 20px;
+	display: block;
+	letter-spacing: 5px;
+	font-size: 1.3em;
+}
+
+.navegacion ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navegacion ul li{
+	display: inline-block;
+}
+
+.navegacion ul li:hover a, .logo:hover{
+	transition: color 0.2s linear;
+	color: var(--color-dorado);
+}
+
+.navegacion ul li a{
+	left: 0;
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.main1{
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    background-color:  rgb(145,119,126);
+    text-align: center;
+    color: black;
+}
+.a1{width: 35%;
+    height: 100%;
+    float: left;
+    background-color: rgb(145,119,126);
+    color:#212020;
+	text-align: center;
+}
+
+.a2{width: 65%;
+    height: 50%;
+    float: left;
+    background-color: rgb(145,119,126);
+}
+.a3{width: 21.6%;
+    height: 50%;
+    float: left;
+	background-color: #b1a692;
+	font-size: 15px;
+}
+.a4{width: 21.6%;
+    height: 50%;
+    float: left;
+	background-color: #efedeb;
+	font-size: 15px;
+}
+.a5{width: 21.6%;
+    height: 50%;
+    float: left;
+	background-color:#949495;
+	font-size: 15px;
+}
+.text1{
+	color:white;
+	font-size: 23px;
+	font-family: 'Bellota', cursive;
+}
+
+
+
+
+
+
+
+
+
+.slideshow-container {
+	max-width: 60%;
+	position: relative;
+	margin: 20px auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  .mySlides img{
+	  width:100%;
+	  height: 100%;
+  }
+  
+  .mySlides:before {
+	  content:'';
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: rgba(80,80,80,.5);
+  }
+  
+  /* Next & previous buttons */
+  #prev, #next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  #next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  /* Position the "prev button" to the left */
+  #prev{
+	  left: 0;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  #prev:hover, #next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+	color: var(--color-blanco);
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 40px;
+	left: -10px;
+	width: 100%;
+	text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .uptext {
+	color: var(--color-blanco);
+	font-size: larger;
+	padding: 8px 12px;
+	position: absolute;
+	top: 45%;
+	left: 35%;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	position: relative;
+	bottom: 40px;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: var(--color-dorado-oscuro);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: var(--color-dorado);
+  }
+  
+  /* Animación para desvanecer la imagen */
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .8}
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .8}
+	to {opacity: 1}
+  }

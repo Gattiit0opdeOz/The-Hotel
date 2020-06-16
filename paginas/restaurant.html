@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	<title>The Hotel</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="restaurant.css">
+	<link rel="stylesheet" href="restaurant.js">
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Bellota:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container logo-nav-container">
+			<a class="logo" href="index.html">The Hotel</a>
+			
+			<nav class="navegacion">
+				<ul>
+					<li class="icon-nav"><a href=""><span class="icono"><i class="icon icon-home"></i> Habitaciones</a></li>
+
+					<li class="icon-nav"><a href=""><span class="icono"><i class="icon icon-spoon-knife"></i> Restaurantes</a></li>
+
+					<li class="icon-nav"><a href=""><span class="icono"><i class="icon icon-spades"></i> Casino</a></li>
+
+					<li class="icon-nav"><a href=""><span class="icono"><i class="icon icon-binoculars"></i> Actividades</a></li>
+
+					<li class="icon-nav"><a href=""><span class="icono"><i class="icon icon-location"></i> Ubicación</a></li>
+
+				</ul>
+			</nav>
+        </div> 
+        <div>
+            <main class="main1">
+                <article class="a1"> <img src="img1.jpg.jpg" width="500" height="700" alt=""> </article>
+                <article class="a2">
+                    <p> <br>
+					   <span class="text1">En The Hotel contamos con la mejor selección de<br> 
+						los platillos más tradicionales hasta los más finos. <br>¡Toma tu tiempo para
+						 checar nuestros platillos más solicitados!</span> 
+					</p>
+					<br>
+					<br>
+					<br>
+					<div class="slideshow-container">
+	
+						<!-- 
+							Esta es una imagen del carrusel, para hacer más
+							solo copia y pega ese div, y modifica la info como lo que llevará en el centro
+							la parte de el texto abajo y tambien el src de la imagen que vas a poner
+						-->
+						<!-- de aqui en adelante los que necesites -->
+						<div class="mySlides fade">
+							<div class="uptext">
+								<h2>Texto llamativo</h2>
+							</div>
+							<img src="mexicanfood1.jpg">
+							<div class="text">Caption Text</div>
+						</div>
+
+						<div class="mySlides fade">
+							<div class="uptext">
+								<h2>Texto llamativo</h2>
+							</div>
+							<img src="../../img/penthouse-1.jpg">
+							<div class="text">Caption Text</div>
+						</div>
+
+						<div class="mySlides fade">
+							<div class="uptext">
+								<h2>Texto llamativo</h2>
+							</div>
+							<img src="../../img/penthouse-1.jpg">
+							<div class="text">Caption Text</div>
+						</div>
+					
+						<!-- de aqui en adelante ya no xd -->
+						<!-- Estos son los botones para moverle a los lados -->	
+						<a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a id="next" onclick="plusSlides(1)">&#10095;</a>
+								
+					</div>
+					<!-- 
+					estas son las bolitas que aparecen abajo que te dicen cuatas imagenes tien el carrusel y en cual vas
+					si tienes menos o más, copia y pega y en la funcion que llama pon el respectivo numero en que vas,
+					por ej en el penthouse yo puse 4, por eso está así
+					-->
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span> 
+						<span class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span> 
+					</div>
+
+                </article>
+                <article class="a3">
+					<a href="mexicanfood.html" class="button" id="regreso">Restaurante Mexicano</a> <br>
+					<img src="mexicanfood.jpg" width="200" height="200" alt="" class="mex">
+				</article>
+				<article class="a4">
+					<a href="italianfood.html" class="button" id="regreso">Restaurante Italiano</a>
+					<img src="italianfood.jpg" width="200" height="200" alt="" class="mex"></article>
+				<article class="a5">
+					<a href="chinesefood.html" class="button" id="regreso">Restaurante Chino</a>
+					<img src="chinesefood.jpg" width="200" height="200" alt="" class="mex"></article>
+            </main>
+        </div>
+	</header>
