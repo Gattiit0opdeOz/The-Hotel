@@ -1,0 +1,233 @@
+*{
+	padding: 0px;
+    margin: 0px;
+}
+/* Ahora aqui que sea mejor los estilos para la principal */
+main{
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    top: 66px;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+.slideshow-container {
+  max-width: 60%;
+  position: relative;
+  margin: 20px auto;
+}
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+  width:100%;
+  height: 100%;
+}
+
+.mySlides:before {
+  content:'';
+  width: 100%;
+  height: 99%;
+	position: absolute;
+  top: 0;
+	background-color: rgba(80,80,80,.5);
+}
+
+/* Next & previous buttons */
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--color-blanco);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "prev button" to the left */
+#prev{
+    left: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover, #next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: var(--color-blanco);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40px;
+  left: -10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.uptext {
+  width: 100%;
+  color: var(--color-blanco);
+  font-size: larger;
+  text-align: center;
+  padding: 8px 12px;
+  position: absolute;
+  top: 45%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  position: relative;
+  bottom: 45px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--color-dorado-oscuro);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--color-dorado);
+}
+
+#descripcion{
+  margin: 20px 20px 20px 0; 
+  font-size: 1.3em;
+  text-align: left;
+}
+
+#descripcion span{
+  position: relative;
+  left: 20%;
+}
+
+#descripcion ul{
+  width: 50%;
+  height: fit-content;
+  display: inline-block;
+}
+
+#descripcion ul > .contenedor-li-desc{
+  width: 100%;
+  position: relative;
+  left: 50%;
+  list-style: none;
+}
+
+
+.spanky{
+    text-align: left;
+
+}
+
+
+#reservar{
+  width: 35%;
+  height: fit-content;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+#reservar a{
+  text-decoration: none;
+  color: var(--color-blanco);
+  background-color: var(--color-dorado);
+  padding: 10px;
+  border-radius: 30px;
+  position: absolute;
+  top: -130px;
+}
+
+/* Animación para desvanecer la imagen */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+
+ul.acorh,
+ul.acorh * {
+margin: 0;
+padding: 0;
+border: 0;
+}
+ul.acorh {
+margin: 10px auto;
+padding: 0;
+list-style: none;
+width: 100%;
+font-size: 18px;
+}
+ul.acorh li {
+list-style: none;
+}
+ul.acorh li a {
+display: block;
+padding: 10px 10px 10px 20px;
+background: #333;
+color: #eee;
+border-bottom: 1px solid #000;
+border-top: 1px solid #666;
+text-decoration: none;
+box-sizing: border-box;
+}
+ul.acorh li ul {
+max-height: 0;
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+transition: .3s all ease-in;
+}
+ul.acorh li li a {
+padding: 10px 10px 10px 40px;
+background: #999;
+color: #000;
+font-size: 16px;
+border: 0;
+border-bottom: 1px solid #ccc;
+box-sizing: border-box;
+}
+ul.acorc li li:last-child a {
+border-bottom: 0;
+}
+ul.acorh li:hover ul {
+max-height: 300px;
+transition: .3s all ease-in;
+}
+ul.acorh li a:hover {
+background: #666;
+color: #fff;
+}

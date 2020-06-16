@@ -8,8 +8,7 @@ html,body{
 }
 main{
     width: 100vw;
-    height: 100vh;
-    background-color: red;
+    height: 205vh;
     /*
     La posición relativa para bajar el main 66px
     porque se sobre pone el header si no lo hacemos ya que el header tiene una posision fixed
@@ -18,20 +17,93 @@ main{
     position: relative;
     top: 66px;
 }
+
+#titulo{
+    font-size: 60px;
+    font-family: gothic;
+}
+#text{
+    font-size: xx-large;
+    font-family: serif;
+    text-align: center;
+}
+#text2{
+    font-size: x-large;
+    font-family: serif;
+    text-align: center;
+}
+
 #pri{
     width: 100vw;
     height: 70vh;
     float: left;
 }
-#pri{
-    width: 100%;
-    height: 35%;
+#pri4{
+    width: 42%;
+    height: 100%;
     float: left;
-    background-color: purple;
+    background-color: rgb(209, 205, 205);
 }
-#pri{
-    width: 100%;
-    height: 35%;
+#pri5{
+    width: 58%;
+    height: 100%;
     float: left;
-    background-color: pink;
+    background-color: #212020;
+    text-align: center;
+}
+#pri1{
+    width: 42%;
+    height: 200%;
+    float: left;
+    background-color: #212020;
+}
+#pri2{
+    width: 58%;
+    height: 100%;
+    float: left;
+    background-color: #212020;
+    text-align: center;
+}
+#pri3{
+    width: 58%;
+    height: 100%;
+    float: left;
+    background-color: #212020;
+    text-align: center;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 708px;
+  height: 398px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  background-color: rgb(209, 205, 205);
+  color: black;
+  transform: rotateY(180deg);
 }

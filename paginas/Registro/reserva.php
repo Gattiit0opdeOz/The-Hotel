@@ -121,7 +121,7 @@
 				<li class="item-footer"><a href="../restaurantes/chinesefood.html">Chino</a></li>
 			</ul>
 			<ul class="columna-footer">
-				<li class="item-footer"><a href="#">Actividades</a></li>
+				<li class="item-footer"><a href="../../#actividades">Actividades</a></li>
 			</ul>
 			<ul class="columna-footer">
 				<li class="item-footer"><a href="../actividades/casino.html">Casino</a></li>
