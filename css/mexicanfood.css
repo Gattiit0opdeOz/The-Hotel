@@ -12,6 +12,7 @@
 	margin: 0px;
 }
 body{
+    background-image: url(../img/mexicanfood.jpg);
     background-repeat:no-repeat; 
     background-attachment:fixed; 
     Background-position: center,center;
