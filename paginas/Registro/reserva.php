@@ -57,6 +57,7 @@
 			$result = mysqli_query($conexion, $sql);
 			if (mysqli_num_rows($result) > 0) {
 				$row = mysqli_fetch_assoc($result);
+				$id = $row['ID'];
 				$nombre = $row['nombre'];
 				$email = $row['correo'];
 				$pass = $row['contraseña'];
@@ -77,14 +78,16 @@
 					//le mostramos la info
 					echo "<div class=\"img-fondo\">
 						<div class=\"gracias-mensaje\">
-							<span>Hola $nombre!</span>
+							<span id\"hola\">Hola $nombre!</span>
 							<p>
 								Tu reserva: 
 								<ul>
-									<li>Tipo de habitación: $habitacion</li>
-									<li>Fecha de entrada: $fecha_entrada</li>
-									<li>Fecha de salida: $fecha_salida</li>
+									<li>ID de habitación: <span>$id</span></li>
+									<li>Tipo de habitación: <span>$habitacion</span></li>
+									<li>Fecha de entrada: <span>$fecha_entrada</span></li>
+									<li>Fecha de salida: <span>$fecha_salida</span></li>
 								</ul>
+								<span id=\"span2\">Aviso: al pasar a la recepción te preguntarán por tu id de reserva</span>
 							</p>
 						</div>
 					</div>";

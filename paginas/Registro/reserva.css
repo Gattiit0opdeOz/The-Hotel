@@ -30,7 +30,18 @@ main{
     font-size: 1.3em;
 }
 
-.gracias-mensaje span {
+li span {
+	font-size: 16px;
+	color: var(--color-doradoloca);
+}
+
+#span2 {
+	font-size: 16px;
+	background-color: var(--color-dorado);
+	color: var(--color-blanco);
+}
+
+#hola {
 	font-size: 1.6em;
 }
 
