@@ -43,8 +43,8 @@
         $fecha_salida = (isset($_POST['fecha-salida'])) ? $_POST['fecha-salida'] : '';
 		$sexo = (isset($_POST['sexo'])) ? $_POST['sexo'] : '';
 		
-		$user = 'root';
-        $password = '';
+		$user = 'the_hotel_admin';
+        $password = '\?~r{0~ji=0Bex^]';
         $server = 'localhost';
         $db = 'the_hotel'; 
 		$conexion = mysqli_connect($server,$user,$password,$db);
