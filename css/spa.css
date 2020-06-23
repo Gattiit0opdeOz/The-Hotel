@@ -193,7 +193,7 @@ font-size: 18px;
 ul.acorh li {
 list-style: none;
 }
-ul.acorh li a {
+ul.acorh li {
 display: block;
 padding: 10px 10px 10px 20px;
 background: #333;
@@ -211,7 +211,7 @@ list-style: none;
 overflow: hidden;
 transition: .3s all ease-in;
 }
-ul.acorh li li a {
+ul.acorh li li {
 padding: 10px 10px 10px 40px;
 background: #999;
 color: #000;
@@ -220,14 +220,14 @@ border: 0;
 border-bottom: 1px solid #ccc;
 box-sizing: border-box;
 }
-ul.acorc li li:last-child a {
+ul.acorc li li:last-child {
 border-bottom: 0;
 }
 ul.acorh li:hover ul {
 max-height: 300px;
 transition: .3s all ease-in;
 }
-ul.acorh li a:hover {
+ul.acorh li:hover {
 background: #666;
 color: #fff;
 }
