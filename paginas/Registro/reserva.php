@@ -38,8 +38,8 @@
 		$correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
 		$contraseña = (isset($_POST['contraseña'])) ? $_POST['contraseña'] : '';
         
-        $user = 'root';
-        $password = '';
+        $user = 'the_hotel_admin';
+        $password = '\?~r{0~ji=0Bex^]';
         $server = 'localhost';
         $db = 'the_hotel'; 
 		$conexion = mysqli_connect($server,$user,$password,$db);
