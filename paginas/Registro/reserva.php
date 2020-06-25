@@ -7,7 +7,9 @@
 	<link rel="shortcut icon" href="../../img/icono.png" type="image/x-icon">
 	<link rel="stylesheet" href="../../css/fonts.css">
 	<link rel="stylesheet" href="../../css/header_footer.css">
-    <title>Reserva</title>
+	<title>Reserva</title>
+	<!-- La wea para el pdf -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -90,6 +92,31 @@
 								<span id=\"span2\">Aviso: al pasar a la recepción te preguntarán por tu id de reserva</span>
 							</p>
 						</div>
+						<!-- La otra wea para el pdf -->
+						<script>
+        					var doc = new jsPDF({
+        					    format: [400, 450]
+        					});
+						
+        					doc.setProperties({
+	    					    title: 'Tu reserva',	
+	    					    author: 'The Hotel'
+        					});
+        					doc.setFontSize(22);
+        					doc.text(20, 20, 'Reserva');
+        					doc.setFontSize(18);
+        					doc.text(20, 40, `ID: $id`);
+        					doc.text(20, 50, `Nombre: $nombre`);
+        					doc.text(20, 60, `Email: $correo`);
+        					doc.text(20, 70, `Habitación: $habitacion`);
+        					doc.text(20, 80, `Llegada: $fecha_entrada`);
+        					doc.text(20, 90, `Salida: $fecha_salida`);
+        					doc.line(20, 30, 120, 30);
+        					doc.line(20, 105, 120, 105);
+        					doc.setFontSize(13);
+        					doc.text(60, 120, 'The Hotel SA ©');
+        					doc.save('tu reserva.pdf');
+    					</script>
 					</div>";
 				} else {
 					throw new Exception();
@@ -104,7 +131,7 @@
     }
 ?>
 
-    </main>
+	</main>
     <footer id="footer">
 		<div id="columnas-footer">
 			<ul class="columna-footer">
