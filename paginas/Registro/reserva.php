@@ -15,16 +15,16 @@
 			<a class="logo" href="../../">The Hotel</a>
 			
 			<nav class="navegacion">
-				<ul>
-					<li class="icon-nav"><a href="../../"><span class="icono"><i class="icon icon-home"></i> Habitaciones</a></li>
+			<ul>
+					<li class="icon-nav"><a href="../../index.html#habitaciones"><span class="icono"><i class="icon icon-home"></i> Habitaciones</a></li>
 
-					<li class="icon-nav"><a href="../../#restaurantes"><span class="icono"><i class="icon icon-spoon-knife"></i> Restaurantes</a></li>
+					<li class="icon-nav"><a href="../../index.html#restaurantes"><span class="icono"><i class="icon icon-spoon-knife"></i> Restaurantes</a></li>
 
-					<li class="icon-nav"><a href="../../#actividades_main"><span class="icono"><i class="icon icon-binoculars"></i> Actividades</a></li>
+					<li class="icon-nav"><a href="../../index.html#actividades_main"><span class="icono"><i class="icon icon-binoculars"></i> Actividades</a></li>
 
-					<li class="icon-nav"><a href="../../#ubicacion"><span class="icono"><i class="icon icon-location"></i> Ubicación</a></li>
+					<li class="icon-nav"><a href="../../index.html#ubicacion"><span class="icono"><i class="icon icon-location"></i> Ubicación</a></li>
 
-					<li class="icon-nav"><a href="../../#casino"><span class="icono"><i class="icon icon-spades"></i> Casino</a></li>
+					<li class="icon-nav"><a href="../../index.html#casino"><span class="icono"><i class="icon icon-spades"></i> Casino</a></li>
 
 				</ul>
 			</nav>
