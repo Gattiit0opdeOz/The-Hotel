@@ -21,7 +21,6 @@ html,body{
 	height: 100vh;
 	overflow-x: hidden !important;
 }
-
 .header{
 	left: 0;
 	right: 0;
@@ -118,5 +117,17 @@ footer hr{
 	height: fit-content;
 	margin: 0 10%;
 	text-align: end;
-	color: var(--color-blanco)
+	color: var(--color-dorado);
+}
+
+.terminos {
+	position: relative;
+	right: 30px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.contenedor-derechos .terminos:hover {
+	transition: background-color .4s linear;
+	background-color: var(--color-dorado-oscuro);
 }
